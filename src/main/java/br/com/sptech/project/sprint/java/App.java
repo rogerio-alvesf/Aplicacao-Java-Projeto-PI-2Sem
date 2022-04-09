@@ -40,8 +40,9 @@ public class App {
         System.out.println(String.format("Máquina %s está logada.",
                 maquinaAcessada.getNumeracaoMaquina()));
         
-        coletarInformacoes.coletarInformacoesComponentes();
-        coletarInformacoes.constultarStatusComponentes();
+        coletarInformacoes.armazenarInformacoesComponentes();
+        coletarInformacoes.exbirInformacoesComponentes();
+        coletarInformacoes.exibirStatusComponentes();
 }
 }
 

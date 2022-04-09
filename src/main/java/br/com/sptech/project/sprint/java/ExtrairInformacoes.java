@@ -1,19 +1,21 @@
 package br.com.sptech.project.sprint.java;
 
-import com.github.britooo.looca.api.core.Looca;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class ExtrairInformacoes {
-
-    Looca maquina = new Looca();
-
+    
     private Processador processador;
     private MemoriaRam memoriaRam;
+    
+    Processador instanciaProcessador = new Processador("", "", "");
+    MemoriaRam instanciaMemoriaRam = new MemoriaRam("", "", "");
 
     public ExtrairInformacoes() {
+        this.processador = instanciaProcessador;
+        this.memoriaRam = instanciaMemoriaRam;
     }
-
+    
     public Processador getProcessador() {
         return processador;
     }
@@ -29,23 +31,29 @@ public class ExtrairInformacoes {
     public void setMemoriaRam(MemoriaRam memoriaRam) {
         this.memoriaRam = memoriaRam;
     }
-
-    public void coletarInformacoesComponentes() {
-        System.out.println(processador.getNome());
-        System.out.println(memoriaRam.getTotal());
+    
+    public void armazenarInformacoesComponentes(){
+        processador.armazenarInformacoesCpu();
+        memoriaRam.armazenarInformacoesMemoriaRam();
     }
 
-    public void constultarStatusComponentes() {
+    public void exbirInformacoesComponentes() {
+        System.out.println(processador.exibirInformacoesCpu());
+        System.out.println(memoriaRam.exibirInformacoesMemoriaRam());
+    }
+
+    public void exibirStatusComponentes() {
         Integer delay = 1000;   // tempo de espera antes da 1ª execução da tarefa.
-        Integer interval = 3000;  // intervalo no qual a tarefa será executada.
+        Integer interval = 5000;  // intervalo no qual a tarefa será executada.
         Timer temporizador = new Timer();
         temporizador.scheduleAtFixedRate(
-                new TimerTask() {
+            new TimerTask() {
             public void run() {
-                System.out.println(processador.getFrequencia());
-                System.out.println(processador.getUso());
-                System.out.println(memoriaRam.getDisponivel());
-                System.out.println(memoriaRam.getUso());
+                processador.armazenarStatusCpu();
+                memoriaRam.armazenarStatusMemoriaRam();
+                
+                System.out.println(processador.exibirStatusCpu());
+                System.out.println(memoriaRam.exibirStatusMemoriaRam());
             }
         }, delay, interval);
     }

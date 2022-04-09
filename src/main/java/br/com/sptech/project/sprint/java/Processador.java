@@ -10,10 +10,10 @@ public class Processador {
 
     Looca maquina = new Looca();
 
-    public Processador() {
-        this.nome = "";
-        this.uso = "";
-        this.frequencia = "";
+    public Processador(String nome, String uso, String frequencia) {
+        this.nome = nome;
+        this.uso = uso;
+        this.frequencia = frequencia;
     }
 
     public String getNome() {
@@ -40,12 +40,21 @@ public class Processador {
         this.frequencia = frequencia;
     }
 
-    public void consultarInformacoesCpu() {
+    public void armazenarInformacoesCpu() {
         setNome(maquina.getProcessador().getNome());
     }
 
-    public void constultarStatusCpu() {
+    public void armazenarStatusCpu() {
         setFrequencia(maquina.getProcessador().getFrequencia().toString());
         setUso(maquina.getProcessador().getUso().toString());
+    }
+
+    public String exibirInformacoesCpu() {
+        return getNome();
+    }
+
+    public String exibirStatusCpu() {
+        return String.format("Frequencia atual do CPU da máquina: %s\n"
+                + "Valor uso da CPU: %s\n", this.frequencia, this.uso);
     }
 }
