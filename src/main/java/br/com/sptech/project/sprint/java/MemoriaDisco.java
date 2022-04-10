@@ -1,5 +1,6 @@
 package br.com.sptech.project.sprint.java;
 
+import java.util.ArrayList;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
 import java.util.List;
@@ -7,8 +8,8 @@ import com.github.britooo.looca.api.group.discos.DiscosGroup;
 
 public class MemoriaDisco {
 
+    private String numeracaoDisco;
     private String valorTamanhoTotal;
-    private String quantidadeDiscos;
     private String modelo;
     private String valorEscrita;
     private String valorLeituras;
@@ -21,13 +22,11 @@ public class MemoriaDisco {
     List<Disco> Discos = Disco.getDiscos();
 
     public MemoriaDisco(String valorTamanhoTotal,
-            String quantidadeDiscos,
             String modelo,
             String valorEscrita,
             String valorLeituras,
             String valorTempoDeTransferencia) {
         this.valorTamanhoTotal = valorTamanhoTotal;
-        this.quantidadeDiscos = quantidadeDiscos;
         this.modelo = modelo;
         this.valorEscrita = valorEscrita;
         this.valorLeituras = valorLeituras;
@@ -40,14 +39,6 @@ public class MemoriaDisco {
 
     public void setValorTamanhoTotal(String valorTamanhoTotal) {
         this.valorTamanhoTotal = valorTamanhoTotal;
-    }
-
-    public String getQuantidadeDiscos() {
-        return quantidadeDiscos;
-    }
-
-    public void setQuantidadeDiscos(String quantidadeDiscos) {
-        this.quantidadeDiscos = quantidadeDiscos;
     }
 
     public String getModelo() {
@@ -89,23 +80,47 @@ public class MemoriaDisco {
         setValorTempoDeTransferencia(Discos.get(0).getTempoDeTransferencia().toString());
     }
 
-    public void armazenarStatusCpu() {
+    public void armazenarStatusmMemoriaDisco() {
         setValorTamanhoTotal(maquina.getGrupoDeDiscos().getTamanhoTotal().toString());
     }
-    
-    public String exibirInformacoesMemoriaDisco(){
+
+    public String exibirInformacoesMemoriaDisco() {
         return getModelo();
     }
 
-    public String exibirStatusMemoriaDisco() {
-        return String.format(
-                "Quantidade de Disco na máquina: %s"
-                + "Valor de escrita: %s\n"
-                + "Valor de leitura: %s\n"
-                + "Valor Tempo de transferencia: %s",
-                this.quantidadeDiscos,
-                this.valorEscrita,
-                this.valorLeituras,
-                this.valorTempoDeTransferencia);
+    public List<String> exibirStatusMemoriaDisco() {
+       List<String> dados = new ArrayList();
+        String resposta = "";
+        for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
+            dados.add(String.format("Dados sobre a memória de disco: %d",
+                    i+1));
+            dados.add(String.format("Valor de escrita: %s",
+                    Discos.get(i).getEscritas().toString()));
+            dados.add(String.format("Valor de leitura: %s",
+                    Discos.get(i).getLeituras().toString()));
+            dados.add(String.format("Valor Tempo de transferencia: %s",
+                    Discos.get(i).getTempoDeTransferencia().toString()));
+                    /*String.format(
+                    "Dados sobre a memória de disco: %d\n"
+                    + "Valor de escrita: %s\n"
+                    + "Valor de leitura: %s\n"
+                    + "Valor Tempo de transferencia: %s\n",
+                    i + 1,
+                    Discos.get(i).getEscritas().toString(),
+                    Discos.get(i).getLeituras().toString(),
+                    Discos.get(i).getTempoDeTransferencia().toString());*/
+        }
+        return dados;
     }
 }
+
+/*for(int x = 0; x < maquina.getGrupoDeDiscos().getQuantidadeDeDiscos(); x++){
+            valoresStatusMemoriaDisco.add(Discos.get(x)).getModelo(),
+            Discos.get(x).getEscritas().toString(),
+            Discos.get(0).getLeituras().toString(),
+            Discos.get(0).getTempoDeTransferencia().toString());
+            setModelo(Discos.get(0).getModelo());
+            setValorEscrita(Discos.get(0).getEscritas().toString());
+            setValorLeituras(Discos.get(0).getLeituras().toString());
+            setValorTempoDeTransferencia(Discos.get(0).getTempoDeTransferencia().toString());
+        };*/

@@ -11,7 +11,7 @@ public class ExtrairInformacoes {
     
     Processador instanciaProcessador = new Processador("", "", "");
     MemoriaRam instanciaMemoriaRam = new MemoriaRam("", "", "");
-    MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco("", "", "", "", "", "");
+    MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco("", "", "", "", "");
 
     public ExtrairInformacoes() {
         this.processador = instanciaProcessador;
