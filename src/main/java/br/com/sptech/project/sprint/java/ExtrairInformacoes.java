@@ -7,13 +7,24 @@ public class ExtrairInformacoes {
     
     private Processador processador;
     private MemoriaRam memoriaRam;
+    private MemoriaDisco memoriaDisco;
     
     Processador instanciaProcessador = new Processador("", "", "");
     MemoriaRam instanciaMemoriaRam = new MemoriaRam("", "", "");
+    MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco("", "", "", "", "", "");
 
     public ExtrairInformacoes() {
         this.processador = instanciaProcessador;
         this.memoriaRam = instanciaMemoriaRam;
+        this.memoriaDisco = instanciaMemoriaDisco;
+    }
+
+    public MemoriaDisco getMemoriaDisco() {
+        return memoriaDisco;
+    }
+
+    public void setMemoriaDisco(MemoriaDisco memoriaDisco) {
+        this.memoriaDisco = memoriaDisco;
     }
     
     public Processador getProcessador() {
@@ -35,11 +46,13 @@ public class ExtrairInformacoes {
     public void armazenarInformacoesComponentes(){
         processador.armazenarInformacoesCpu();
         memoriaRam.armazenarInformacoesMemoriaRam();
+        memoriaDisco.armazenarInformacoesMemoriaDisco();
     }
 
     public void exbirInformacoesComponentes() {
         System.out.println(processador.exibirInformacoesCpu());
         System.out.println(memoriaRam.exibirInformacoesMemoriaRam());
+        System.out.println(memoriaDisco.exibirInformacoesMemoriaDisco());
     }
 
     public void exibirStatusComponentes() {
@@ -54,6 +67,7 @@ public class ExtrairInformacoes {
                 
                 System.out.println(processador.exibirStatusCpu());
                 System.out.println(memoriaRam.exibirStatusMemoriaRam());
+                System.out.println(memoriaDisco.exibirStatusMemoriaDisco());
             }
         }, delay, interval);
     }
