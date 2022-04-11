@@ -41,7 +41,7 @@ public class App {
                 maquinaAcessada.getNumeracaoMaquina()));
         
         coletarInformacoes.armazenarInformacoesComponentes();
-        coletarInformacoes.exbirInformacoesComponentes();
+        coletarInformacoes.exbirInformacoesComponentes();11
         coletarInformacoes.exibirStatusComponentes();
 }
 }

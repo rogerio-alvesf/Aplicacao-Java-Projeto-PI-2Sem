@@ -14,6 +14,7 @@ public class MemoriaDisco {
     private String valorEscrita;
     private String valorLeituras;
     private String valorTempoDeTransferencia;
+    private String espacoLivre;
 
     Looca maquina = new Looca();
 
@@ -25,12 +26,22 @@ public class MemoriaDisco {
             String modelo,
             String valorEscrita,
             String valorLeituras,
-            String valorTempoDeTransferencia) {
+            String valorTempoDeTransferencia,
+            String espacoLivre) {
         this.valorTamanhoTotal = valorTamanhoTotal;
         this.modelo = modelo;
         this.valorEscrita = valorEscrita;
         this.valorLeituras = valorLeituras;
         this.valorTempoDeTransferencia = valorTempoDeTransferencia;
+        this.espacoLivre = espacoLivre;
+    }
+
+    public String getEspacoLivre() {
+        return espacoLivre;
+    }
+
+    public void setEspacoLivre(String espacoLivre) {
+        this.espacoLivre = espacoLivre;
     }
 
     public String getValorTamanhoTotal() {
@@ -75,32 +86,39 @@ public class MemoriaDisco {
 
     public void armazenarInformacoesMemoriaDisco() {
         setModelo(Discos.get(0).getModelo());
+        setValorTamanhoTotal(maquina.getGrupoDeDiscos().getTamanhoTotal().toString());
+    }
+
+    public void armazenarStatusmMemoriaDisco() {
+        setEspacoLivre(String.valueOf(maquina.getGrupoDeDiscos().getTamanhoTotal() - Disco.getVolumes().get(0).getDisponivel()));
         setValorEscrita(Discos.get(0).getEscritas().toString());
         setValorLeituras(Discos.get(0).getLeituras().toString());
         setValorTempoDeTransferencia(Discos.get(0).getTempoDeTransferencia().toString());
     }
 
-    public void armazenarStatusmMemoriaDisco() {
-        setValorTamanhoTotal(maquina.getGrupoDeDiscos().getTamanhoTotal().toString());
-    }
-
-    public String exibirInformacoesMemoriaDisco() {
-        return getModelo();
+    public List<String> exibirInformacoesMemoriaDisco() {
+        List<String> dados = new ArrayList();
+        for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
+            dados.add(String.format("Informações Da memória de disco: %d",
+                    i + 1));
+            dados.add(String.format("Valor de escrita: %s",
+                    Discos.get(i).getModelo()));
+        }
+        return dados;
     }
 
     public List<String> exibirStatusMemoriaDisco() {
-       List<String> dados = new ArrayList();
-        String resposta = "";
+        List<String> dados = new ArrayList();
         for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
             dados.add(String.format("Dados sobre a memória de disco: %d",
-                    i+1));
+                    i + 1));
             dados.add(String.format("Valor de escrita: %s",
                     Discos.get(i).getEscritas().toString()));
             dados.add(String.format("Valor de leitura: %s",
                     Discos.get(i).getLeituras().toString()));
             dados.add(String.format("Valor Tempo de transferencia: %s",
                     Discos.get(i).getTempoDeTransferencia().toString()));
-                    /*String.format(
+            /*String.format(
                     "Dados sobre a memória de disco: %d\n"
                     + "Valor de escrita: %s\n"
                     + "Valor de leitura: %s\n"
