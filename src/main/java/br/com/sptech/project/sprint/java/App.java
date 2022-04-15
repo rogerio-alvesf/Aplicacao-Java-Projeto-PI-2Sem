@@ -39,11 +39,11 @@ public class App {
 
         System.out.println(String.format("Máquina %s está logada.",
                 maquinaAcessada.getNumeracaoMaquina()));
-        
+
         coletarInformacoes.armazenarInformacoesComponentes();
-        coletarInformacoes.exbirInformacoesComponentes();11
+        coletarInformacoes.exbirInformacoesComponentes();
         coletarInformacoes.exibirStatusComponentes();
-}
+    }
 }
 
 /*if (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false

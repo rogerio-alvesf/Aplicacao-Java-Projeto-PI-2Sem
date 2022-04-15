@@ -5,12 +5,12 @@ import com.github.britooo.looca.api.core.Looca;
 public class Processador {
 
     private String nome;
-    private String uso;
-    private String frequencia;
+    private Double uso;
+    private Long frequencia;
 
     Looca maquina = new Looca();
 
-    public Processador(String nome, String uso, String frequencia) {
+    public Processador(String nome, Double uso, Long frequencia) {
         this.nome = nome;
         this.uso = uso;
         this.frequencia = frequencia;
@@ -24,37 +24,37 @@ public class Processador {
         this.nome = nome;
     }
 
-    public String getUso() {
+    public Double getUso() {
         return uso;
     }
 
-    public void setUso(String uso) {
+    public void setUso(Double uso) {
         this.uso = uso;
     }
 
-    public String getFrequencia() {
+    public Long getFrequencia() {
         return frequencia;
     }
 
-    public void setFrequencia(String frequencia) {
+    public void setFrequencia(Long frequencia) {
         this.frequencia = frequencia;
     }
-
+    
     public void armazenarInformacoesCpu() {
-        setNome(maquina.getProcessador().getNome());
+        nome = maquina.getProcessador().getNome();
     }
 
     public void armazenarStatusCpu() {
-        setFrequencia(maquina.getProcessador().getFrequencia().toString());
-        setUso(maquina.getProcessador().getUso().toString());
+        frequencia = maquina.getProcessador().getFrequencia();
+        uso = maquina.getProcessador().getUso();
     }
 
     public String exibirInformacoesCpu() {
-        return getNome();
+        return nome;
     }
 
     public String exibirStatusCpu() {
         return String.format("Frequencia atual do CPU da máquina: %s\n"
-                + "Valor uso da CPU: %s\n", this.frequencia, this.uso);
+                + "Valor uso da CPU: %.2f\n", frequencia, uso);
     }
 }

@@ -4,14 +4,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ExtrairInformacoes {
-    
+
     private Processador processador;
     private MemoriaRam memoriaRam;
     private MemoriaDisco memoriaDisco;
-    
-    Processador instanciaProcessador = new Processador("", "", "");
-    MemoriaRam instanciaMemoriaRam = new MemoriaRam("", "", "");
-    MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco("", "", "", "", "", "");
+
+    Processador instanciaProcessador = new Processador("", 0.0, 0L);
+    MemoriaRam instanciaMemoriaRam = new MemoriaRam(0L, 0L, 0L);
+    MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco(0L, "", 0L, 0L, 0L, 0L);
 
     public ExtrairInformacoes() {
         this.processador = instanciaProcessador;
@@ -26,7 +26,7 @@ public class ExtrairInformacoes {
     public void setMemoriaDisco(MemoriaDisco memoriaDisco) {
         this.memoriaDisco = memoriaDisco;
     }
-    
+
     public Processador getProcessador() {
         return processador;
     }
@@ -42,8 +42,8 @@ public class ExtrairInformacoes {
     public void setMemoriaRam(MemoriaRam memoriaRam) {
         this.memoriaRam = memoriaRam;
     }
-    
-    public void armazenarInformacoesComponentes(){
+
+    public void armazenarInformacoesComponentes() {
         processador.armazenarInformacoesCpu();
         memoriaRam.armazenarInformacoesMemoriaRam();
         memoriaDisco.armazenarInformacoesMemoriaDisco();
@@ -60,11 +60,11 @@ public class ExtrairInformacoes {
         Integer interval = 5000;  // intervalo no qual a tarefa será executada.
         Timer temporizador = new Timer();
         temporizador.scheduleAtFixedRate(
-            new TimerTask() {
+                new TimerTask() {
             public void run() {
                 processador.armazenarStatusCpu();
                 memoriaRam.armazenarStatusMemoriaRam();
-                
+
                 System.out.println(processador.exibirStatusCpu());
                 System.out.println(memoriaRam.exibirStatusMemoriaRam());
                 System.out.println(memoriaDisco.exibirStatusMemoriaDisco());
