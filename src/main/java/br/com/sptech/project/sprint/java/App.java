@@ -1,14 +1,20 @@
 package br.com.sptech.project.sprint.java;
 
 import java.util.Scanner;
+import models.Login;
 
 public class App {
 
     public static void main(String[] args) {
-        ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes();
+        Logar();
+        
+    }
+    
+    public static void Logar(){
         Maquina maquinaAcessada = new Maquina();
         Scanner leitorNumeracaoMaquina = new Scanner(System.in);
         Scanner leitorSenhaMaquina = new Scanner(System.in);
+        Login loginMaquina = new Login();
 
         System.out.println("*".repeat(15) + "Logar máquina para gerar coletar i"
                 + "nformações" + "*".repeat(15) + "\nQual a numeração da máquin"
@@ -36,29 +42,18 @@ public class App {
             senhaMaquinaDigitado = leitorSenhaMaquina.nextLine();
             maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
         }
-
+        
+        loginMaquina.realizarLogin();
+        
         System.out.println(String.format("Máquina %s está logada.",
                 maquinaAcessada.getNumeracaoMaquina()));
-
+    }
+    
+    public static void ColetarDados(){
+        ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes();
+        
         coletarInformacoes.armazenarInformacoesComponentes();
         coletarInformacoes.exbirInformacoesComponentes();
         coletarInformacoes.exibirStatusComponentes();
     }
 }
-
-/*if (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false
-                    && maquinaAcessada.validarSenha(senhaMaquinaDigitado) == false) {
-                System.out.println("Numeração da máquina e senha estão inválidas"
-                        + ". Qual a numeração da máquina:");
-                numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextLine();
-                maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
-                System.out.println("Qual a senha de acesso da máquina:");
-                senhaMaquinaDigitado = leitorSenhaMaquina.nextLine();
-                maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
-            } else if (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false) {
-                System.out.println("Númeração da máquina está inválida. Dígite "
-                        + "uma numeração de máquina válida:");
-                numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextLine();
-                maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
-            } else if (maquinaAcessada.validarSenha(senhaMaquinaDigitado) == false) {
- */

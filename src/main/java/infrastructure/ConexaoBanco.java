@@ -11,7 +11,7 @@ public class ConexaoBanco {
         BasicDataSource dataSource = new BasicDataSource();
 
         dataSource​.setDriverClassName("com.mysql.jdbc.Driver");//driver do banco
-        dataSource​.setUrl("jdbc:mysql://localhost:3306/nome_banco");// url para se conectar com o banco e dizer se vai ser do tipo de arquivo ou de memória
+        dataSource​.setUrl("jdbc:mysql://localhost:3306/FarmagraphSolution");// url para se conectar com o banco e dizer se vai ser do tipo de arquivo ou de memória
         dataSource​.setUsername("root");//System Administration nome padrão do user name do h2
         dataSource​.setPassword("");//senha de acesso ao banco de dados
 
