@@ -1,16 +1,17 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
+import models.MemoriaRamModel;
 
 public class MemoriaRam {
-
+    
     private Long total;
     private Long uso;
     private Long disponivel;
 
     Looca maquina = new Looca();
 
-    public MemoriaRam(Long total, Long uso, Long disponivel) {
+    public MemoriaRam(Long total, Long uso, Long disponivel) { 
         this.total = total;
         this.uso = uso;
         this.disponivel = disponivel;
@@ -40,13 +41,21 @@ public class MemoriaRam {
         this.disponivel = disponivel;
     }
 
-    public void armazenarInformacoesMemoriaRam() {
-        total = maquina.getMemoria().getTotal();
+    public void armazenarInformacoesMemoriaRam(Integer idMaquina) {
+        if(MemoriaRamModel.verificarInformacoes(idMaquina) == false){
+            total = maquina.getMemoria().getTotal();
+            System.out.println(idMaquina+ "\n");
+            MemoriaRamModel.armazenarInformacoes(idMaquina, total);
+            return;
+        }
+        System.out.println("Dados já cadastrados");
     }
 
-    public void armazenarStatusMemoriaRam() {
+    public void armazenarStatusMemoriaRam(Integer idMaquina) {
         uso = maquina.getMemoria().getEmUso();
         disponivel = maquina.getMemoria().getDisponivel();
+        System.out.println(idMaquina + "\n");
+        MemoriaRamModel.armazenarStatus(idMaquina, uso, disponivel);
     }
 
     public Long exibirInformacoesMemoriaRam() {

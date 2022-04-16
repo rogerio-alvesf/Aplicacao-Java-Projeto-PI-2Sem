@@ -3,27 +3,17 @@ package br.com.sptech.project.sprint.java;
 import com.github.britooo.looca.api.core.Looca;
 
 public class Processador {
-    
-    private Integer idMaquina;
+
     private String nome;
     private Double uso;
     private Long frequencia;
 
     Looca maquina = new Looca();
 
-    public Processador(Integer idMaquina, String nome, Double uso, Long frequencia) {
-        this.idMaquina = idMaquina;
+    public Processador(String nome, Double uso, Long frequencia) {
         this.nome = nome;
         this.uso = uso;
         this.frequencia = frequencia;
-    }
-
-    public Integer getIdMaquina() {
-        return idMaquina;
-    }
-
-    public void setIdMaquina(Integer idMaquina) {
-        this.idMaquina = idMaquina;
     }
 
     public String getNome() {
