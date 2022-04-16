@@ -1,16 +1,25 @@
 package models;
 
 import infrastructure.ConexaoBanco;
-import java.util.List;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Login {
 
-    ConexaoBanco conexao = new ConexaoBanco();
-    //PARA CRIAR, DELETAR E ATUALIZAR DATABASE, USAR .EXECUTE
+    public static Boolean realizarLogin(String Nome, String Senha) {
+        String QUERY = String.format("SELECT Nome, Senha From Responsavel "
+                + "WHERE Nome ='%s' AND Senha = '%s'", Nome, Senha);
 
-    public void realizarLogin(){
-        List<Login> listaComputadores = conexao.getConexao().query("SELECT * FROM Computador", new BeanPropertyRowMapper<T>(Login.class));
-        System.out.println(listaComputadores);
+        try (Connection conn = ConexaoBanco.getConnection();
+                Statement stmt = conn.createStatement();
+                ResultSet rs = stmt.executeQuery(QUERY);) {
+
+            return rs.next();
+
+        } catch (SQLException erro) {
+            throw new RuntimeException("Computador não existe" + erro);
+        }
     }
 }

@@ -7,14 +7,13 @@ public class App {
 
     public static void main(String[] args) {
         Logar();
-        
+
     }
-    
-    public static void Logar(){
-        Maquina maquinaAcessada = new Maquina();
+
+    public static void Logar() {
         Scanner leitorNumeracaoMaquina = new Scanner(System.in);
         Scanner leitorSenhaMaquina = new Scanner(System.in);
-        Login loginMaquina = new Login();
+        Maquina maquinaAcessada = new Maquina();
 
         System.out.println("*".repeat(15) + "Logar máquina para gerar coletar i"
                 + "nformações" + "*".repeat(15) + "\nQual a numeração da máquin"
@@ -43,15 +42,21 @@ public class App {
             maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
         }
         
-        loginMaquina.realizarLogin();
+        Boolean respostaLogin = Login.realizarLogin("Alber to", "1234");
         
+        if(respostaLogin){
+            
         System.out.println(String.format("Máquina %s está logada.",
-                maquinaAcessada.getNumeracaoMaquina()));
+                    maquinaAcessada.getNumeracaoMaquina()));
+        }else {
+            System.out.println("Tente Novamente!!!");
+        }
+       
     }
-    
-    public static void ColetarDados(){
+
+    public static void ColetarDados() {
         ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes();
-        
+
         coletarInformacoes.armazenarInformacoesComponentes();
         coletarInformacoes.exbirInformacoesComponentes();
         coletarInformacoes.exibirStatusComponentes();
