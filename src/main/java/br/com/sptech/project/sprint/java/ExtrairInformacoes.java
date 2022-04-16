@@ -4,45 +4,31 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ExtrairInformacoes {
-
+    
+    private Integer idMaquina;
     private Processador processador;
     private MemoriaRam memoriaRam;
     private MemoriaDisco memoriaDisco;
 
-    Processador instanciaProcessador = new Processador("", 0.0, 0L);
+    Processador instanciaProcessador = new Processador( idMaquina,"", 0.0, 0L);
     MemoriaRam instanciaMemoriaRam = new MemoriaRam(0L, 0L, 0L);
     MemoriaDisco instanciaMemoriaDisco = new MemoriaDisco(0L, "", 0L, 0L, 0L, 0L);
 
-    public ExtrairInformacoes() {
+    public ExtrairInformacoes(Integer idMaquina) {
+        this.idMaquina = idMaquina;
         this.processador = instanciaProcessador;
         this.memoriaRam = instanciaMemoriaRam;
         this.memoriaDisco = instanciaMemoriaDisco;
     }
 
-    public MemoriaDisco getMemoriaDisco() {
-        return memoriaDisco;
+    public Integer getIdMaquina() {
+        return idMaquina;
     }
 
-    public void setMemoriaDisco(MemoriaDisco memoriaDisco) {
-        this.memoriaDisco = memoriaDisco;
+    public void setIdMaquina(Integer idMaquina) {
+        this.idMaquina = idMaquina;
     }
-
-    public Processador getProcessador() {
-        return processador;
-    }
-
-    public void setProcessador(Processador processador) {
-        this.processador = processador;
-    }
-
-    public MemoriaRam getMemoriaRam() {
-        return memoriaRam;
-    }
-
-    public void setMemoriaRam(MemoriaRam memoriaRam) {
-        this.memoriaRam = memoriaRam;
-    }
-
+    
     public void armazenarInformacoesComponentes() {
         processador.armazenarInformacoesCpu();
         memoriaRam.armazenarInformacoesMemoriaRam();

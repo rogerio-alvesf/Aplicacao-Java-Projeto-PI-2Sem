@@ -117,15 +117,6 @@ public class MemoriaDisco {
                     Discos.get(i).getLeituras()));
             dados.add(String.format("Valor Tempo de transferencia: %d",
                     Discos.get(i).getTempoDeTransferencia()));
-            /*String.format(
-                    "Dados sobre a memória de disco: %d\n"
-                    + "Valor de escrita: %s\n"
-                    + "Valor de leitura: %s\n"
-                    + "Valor Tempo de transferencia: %s\n",
-                    i + 1,
-                    Discos.get(i).getEscritas().toString(),
-                    Discos.get(i).getLeituras().toString(),
-                    Discos.get(i).getTempoDeTransferencia().toString());*/
         }
         return dados;
     }

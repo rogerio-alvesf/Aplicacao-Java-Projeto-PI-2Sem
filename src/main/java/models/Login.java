@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class Login {
 
-    public static Boolean realizarLogin(String Nome, String Senha) {
-        String QUERY = String.format("SELECT Nome, Senha From Responsavel "
-                + "WHERE Nome ='%s' AND Senha = '%s'", Nome, Senha);
+    public static Boolean realizarLogin(Integer ID, String Senha) {
+        String QUERY = String.format("SELECT ID_Computador, Senha From Computador"
+                + " WHERE ID_Computador = %d AND Senha = '%s';", ID, Senha);
 
         try (Connection conn = ConexaoBanco.getConnection();
                 Statement stmt = conn.createStatement();
@@ -22,4 +22,5 @@ public class Login {
             throw new RuntimeException("Computador não existe" + erro);
         }
     }
+    
 }

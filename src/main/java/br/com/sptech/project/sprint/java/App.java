@@ -7,7 +7,6 @@ public class App {
 
     public static void main(String[] args) {
         Logar();
-
     }
 
     public static void Logar() {
@@ -19,14 +18,14 @@ public class App {
                 + "nformações" + "*".repeat(15) + "\nQual a numeração da máquin"
                 + "a:");
 
-        String numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextLine();
+        Integer numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextInt();
 
         maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
 
         while (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false) {
             System.out.println("Númeração da máquina está inválida. Dígite "
                     + "uma numeração de máquina válida:");
-            numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextLine();
+            numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextInt();
             maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
         }
 
@@ -41,21 +40,23 @@ public class App {
             senhaMaquinaDigitado = leitorSenhaMaquina.nextLine();
             maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
         }
-        
-        Boolean respostaLogin = Login.realizarLogin("Alber to", "1234");
-        
-        if(respostaLogin){
-            
-        System.out.println(String.format("Máquina %s está logada.",
+
+        Boolean respostaLogin = Login.realizarLogin(
+                numeracaoMaquinaDigitado,
+                senhaMaquinaDigitado);
+
+        if (respostaLogin) {
+            System.out.println(String.format("Máquina %s está logada.",
                     maquinaAcessada.getNumeracaoMaquina()));
+            ColetarDados(numeracaoMaquinaDigitado);
         }else {
-            System.out.println("Tente Novamente!!!");
+            System.out.println("Computador não exite!!!");
+            Logar();
         }
-       
     }
 
-    public static void ColetarDados() {
-        ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes();
+    public static void ColetarDados(Integer idMaquina) {
+        ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes(idMaquina);
 
         coletarInformacoes.armazenarInformacoesComponentes();
         coletarInformacoes.exbirInformacoesComponentes();

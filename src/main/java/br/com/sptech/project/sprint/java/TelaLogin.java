@@ -123,7 +123,7 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtNumeracaoMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeracaoMaquinaActionPerformed
-        // TODO add your handling code here:
+         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumeracaoMaquinaActionPerformed
 
     private void btnAcessarMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarMaquinaActionPerformed
@@ -131,12 +131,12 @@ public class TelaLogin extends javax.swing.JFrame {
         String numeracaoMaquinaDigitada = txtNumeracaoMaquina.getText();
         String senhaAcessoMaquinaDigitada = txtSenhaMaquina.getText();
 
-        if(numeracaoMaquinaDigitada.trim().equals("")){
+        if(numeracaoMaquinaDigitada.equals("")){
             lblInformacaoMaquina.setText("A numeração da máquina está inválida.");
         }else if(senhaAcessoMaquinaDigitada.trim().equals("")){
             lblInformacaoMaquina.setText("A senha de acesso da máquina está inválida.");   
         }else{
-            maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitada);
+            maquinaAcessada.setNumeracaoMaquina(Integer.valueOf(numeracaoMaquinaDigitada));
             maquinaAcessada.setSenhaAcessoMaquina(senhaAcessoMaquinaDigitada);
         }
         

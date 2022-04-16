@@ -1,16 +1,16 @@
 package br.com.sptech.project.sprint.java;
 
 public class Maquina {
-    private String numeracaoMaquina;
+    private Integer numeracaoMaquina;
     private String senhaAcessoMaquina;
 
     public Maquina() {
-        this.numeracaoMaquina = "";
+        this.numeracaoMaquina = 0;
         this.senhaAcessoMaquina = "";
     }
     
-    public Boolean validarNumeracao(String numeracaoMaquinaDigitada){
-        if (numeracaoMaquinaDigitada.trim().equals("")) {
+    public Boolean validarNumeracao(Integer numeracaoMaquinaDigitada){
+        if (numeracaoMaquinaDigitada.equals("")) {
             return false;
         }else {
             return true;
@@ -25,11 +25,11 @@ public class Maquina {
         }
     }
 
-    public String getNumeracaoMaquina() {
+    public Integer getNumeracaoMaquina() {
         return numeracaoMaquina;
     }
 
-    public void setNumeracaoMaquina(String numeracaoMaquina) {
+    public void setNumeracaoMaquina(Integer numeracaoMaquina) {
         if (validarNumeracao(numeracaoMaquina) == true) {
             this.numeracaoMaquina = numeracaoMaquina;
         }
