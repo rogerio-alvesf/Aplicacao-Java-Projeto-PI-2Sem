@@ -1,7 +1,9 @@
 br\com\sptech\project\sprint\java\TelaLogin$3.class
+models\MemoriaDiscoModel.class
 br\com\sptech\project\sprint\java\TelaLogin.class
 models\Login.class
 br\com\sptech\project\sprint\java\TelaLogin$2.class
+models\ProcessadorModel.class
 br\com\sptech\project\sprint\java\TelaLogin$1.class
 infrastructure\ConexaoBanco.class
 br\com\sptech\project\sprint\java\ExtrairInformacoes$1.class
@@ -10,4 +12,5 @@ br\com\sptech\project\sprint\java\MemoriaDisco.class
 br\com\sptech\project\sprint\java\MemoriaRam.class
 br\com\sptech\project\sprint\java\ExtrairInformacoes.class
 br\com\sptech\project\sprint\java\Maquina.class
+models\MemoriaRamModel.class
 br\com\sptech\project\sprint\java\Processador.class

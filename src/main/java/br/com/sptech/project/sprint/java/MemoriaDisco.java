@@ -5,6 +5,7 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
 import java.util.List;
 import com.github.britooo.looca.api.group.discos.DiscosGroup;
+import models.MemoriaDiscoModel;
 
 public class MemoriaDisco {
 
@@ -83,16 +84,29 @@ public class MemoriaDisco {
         this.espacoLivre = espacoLivre;
     }
 
-    public void armazenarInformacoesMemoriaDisco() {
-        modelo = Discos.get(0).getModelo();
-        valorTamanhoTotal = maquina.getGrupoDeDiscos().getTamanhoTotal();
+    public void armazenarInformacoesMemoriaDisco(Integer idMaquina) {
+        if(MemoriaDiscoModel.verificarInformacoes(idMaquina) == false){
+            for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
+                modelo = Discos.get(i).getModelo();
+                valorTamanhoTotal = maquina.getGrupoDeDiscos().getDiscos().get(i).getTamanho();
+                MemoriaDiscoModel.armazenarInformacoes(idMaquina, modelo, valorTamanhoTotal);
+            }
+        }
+        else{
+            System.out.println("Memoria de massa já existe");
+        }
     }
 
-    public void armazenarStatusmMemoriaDisco() {
-        espacoLivre = maquina.getGrupoDeDiscos().getTamanhoTotal() - Disco.getVolumes().get(0).getDisponivel();
-        valorEscrita = Discos.get(0).getEscritas();
-        valorLeituras = Discos.get(0).getLeituras();
-        valorTempoDeTransferencia = Discos.get(0).getTempoDeTransferencia();
+    public void armazenarStatusmMemoriaDisco(Integer idMaquina) {
+        for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
+            espacoLivre = maquina.getGrupoDeDiscos().getTamanhoTotal() - Disco.getVolumes().get(i).getDisponivel();
+            valorEscrita = Discos.get(i).getEscritas();
+            valorLeituras = Discos.get(i).getLeituras();
+            valorTempoDeTransferencia = Discos.get(i).getTempoDeTransferencia();
+            modelo = Discos.get(i).getModelo();
+            
+            MemoriaDiscoModel.armazenarStatus(idMaquina, valorLeituras, valorEscrita, valorTempoDeTransferencia, espacoLivre, modelo);
+        }
     }
 
     public List<String> exibirInformacoesMemoriaDisco() {

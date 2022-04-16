@@ -1,6 +1,7 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
+import models.ProcessadorModel;
 
 public class Processador {
 
@@ -40,14 +41,19 @@ public class Processador {
         this.frequencia = frequencia;
     }
     
-    public void armazenarInformacoesCpu() {
-        nome = maquina.getProcessador().getNome();
-        //metodo do insert (nome)
+    public void armazenarInformacoesCpu(Integer idMaquina) {
+        if(ProcessadorModel.verificarInformacoes(idMaquina) == false){
+            nome = maquina.getProcessador().getNome();
+            ProcessadorModel.armazenarInformacoes(idMaquina, nome);
+            System.out.println("Processador já cadastrado.");
+        }
     }
 
-    public void armazenarStatusCpu() {
+    public void armazenarStatusCpu(Integer idMaquina) {
         frequencia = maquina.getProcessador().getFrequencia();
         uso = maquina.getProcessador().getUso();
+        System.out.println(idMaquina + "\n" + frequencia + "\n" + uso + "\n");
+        ProcessadorModel.armazenarStatus(idMaquina, frequencia, uso);
     }
 
     public String exibirInformacoesCpu() {

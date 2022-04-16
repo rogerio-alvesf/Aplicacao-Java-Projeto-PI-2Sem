@@ -20,9 +20,9 @@ public class ExtrairInformacoes {
     }
     
     public void armazenarInformacoesComponentes(Integer idMaquina) {
-        processador.armazenarInformacoesCpu();
+        processador.armazenarInformacoesCpu(idMaquina);
         memoriaRam.armazenarInformacoesMemoriaRam(idMaquina);
-        memoriaDisco.armazenarInformacoesMemoriaDisco();
+        memoriaDisco.armazenarInformacoesMemoriaDisco(idMaquina);
     }
 
     public void exbirInformacoesComponentes() {
@@ -38,12 +38,12 @@ public class ExtrairInformacoes {
         temporizador.scheduleAtFixedRate(
                 new TimerTask() {
             public void run() {
-                processador.armazenarStatusCpu();
+                processador.armazenarStatusCpu(idMaquina);
                 memoriaRam.armazenarStatusMemoriaRam(idMaquina);
-
+                memoriaDisco.armazenarStatusmMemoriaDisco(idMaquina);
+                
                 System.out.println(processador.exibirStatusCpu());
                 // System.out.println(memoriaRam.exibirStatusMemoriaRam());
-                System.out.println(memoriaDisco.exibirStatusMemoriaDisco());
             }
         }, delay, interval);
     }
