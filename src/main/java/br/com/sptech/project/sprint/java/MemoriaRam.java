@@ -44,7 +44,6 @@ public class MemoriaRam {
     public void armazenarInformacoesMemoriaRam(Integer idMaquina) {
         if(MemoriaRamModel.verificarInformacoes(idMaquina) == false){
             total = maquina.getMemoria().getTotal();
-            System.out.println(idMaquina+ "\n");
             MemoriaRamModel.armazenarInformacoes(idMaquina, total);
             return;
         }
@@ -54,7 +53,6 @@ public class MemoriaRam {
     public void armazenarStatusMemoriaRam(Integer idMaquina) {
         uso = maquina.getMemoria().getEmUso();
         disponivel = maquina.getMemoria().getDisponivel();
-        System.out.println(idMaquina + "\n");
         MemoriaRamModel.armazenarStatus(idMaquina, uso, disponivel);
     }
 

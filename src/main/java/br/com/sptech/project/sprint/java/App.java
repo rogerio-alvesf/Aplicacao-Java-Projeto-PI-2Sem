@@ -57,7 +57,6 @@ public class App {
 
     public static void ColetarDados(Integer idMaquina) {
         ExtrairInformacoes coletarInformacoes = new ExtrairInformacoes(idMaquina);
-        System.out.println(idMaquina + "\n" + "App");
         coletarInformacoes.armazenarInformacoesComponentes(idMaquina);
         coletarInformacoes.exbirInformacoesComponentes();
         coletarInformacoes.exibirStatusComponentes(idMaquina);

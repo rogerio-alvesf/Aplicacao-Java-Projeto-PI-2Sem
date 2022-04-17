@@ -1,12 +1,12 @@
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\App.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\Processador.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\TelaLogin.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\Maquina.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\MemoriaDiscoModel.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\ProcessadorModel.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\ExtrairInformacoes.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\infrastructure\ConexaoBanco.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\MemoriaRam.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\MemoriaRamModel.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\MemoriaDisco.java
-C:\Users\roger\Documents\GitHub Projects\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\Login.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\App.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\infrastructure\ConexaoBanco.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\Login.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\ProcessadorModel.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\MemoriaDiscoModel.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\models\MemoriaRamModel.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\TelaLogin.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\MemoriaDisco.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\Processador.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\Maquina.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\MemoriaRam.java
+C:\Users\guilh\OneDrive\Documentos\SpTech\Pesquisa e Inovação\Aplicacao-Java-Projeto-PI-2Sem\src\main\java\br\com\sptech\project\sprint\java\ExtrairInformacoes.java

@@ -47,12 +47,12 @@ public class ProcessadorModel {
                 + "Frequencia,"
                 + " Uso,"
                 + " FK_Processador)"
-                + " VALUES (%d, %f, (SELECT ID_Processador FROM Processador"
+                + " VALUES (%d, %.0f, (SELECT ID_Processador FROM Processador"
                 + " WHERE FK_Computador = %d));",
                 Frequencia,
                 Uso,
                 IdMaquina);
-
+     
         try (Connection conn = ConexaoBanco.getConnection();
                 Statement stmt = conn.createStatement();) {
 

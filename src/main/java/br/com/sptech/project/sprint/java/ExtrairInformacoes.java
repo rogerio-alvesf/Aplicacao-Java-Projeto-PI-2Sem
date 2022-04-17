@@ -4,7 +4,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ExtrairInformacoes {
-    
+
     private Processador processador;
     private MemoriaRam memoriaRam;
     private MemoriaDisco memoriaDisco;
@@ -18,11 +18,11 @@ public class ExtrairInformacoes {
         this.memoriaRam = instanciaMemoriaRam;
         this.memoriaDisco = instanciaMemoriaDisco;
     }
-    
+
     public void armazenarInformacoesComponentes(Integer idMaquina) {
         processador.armazenarInformacoesCpu(idMaquina);
-        memoriaRam.armazenarInformacoesMemoriaRam(idMaquina);
         memoriaDisco.armazenarInformacoesMemoriaDisco(idMaquina);
+        memoriaRam.armazenarInformacoesMemoriaRam(idMaquina);
     }
 
     public void exbirInformacoesComponentes() {
@@ -41,8 +41,8 @@ public class ExtrairInformacoes {
                 processador.armazenarStatusCpu(idMaquina);
                 memoriaRam.armazenarStatusMemoriaRam(idMaquina);
                 memoriaDisco.armazenarStatusmMemoriaDisco(idMaquina);
-                
-                System.out.println(processador.exibirStatusCpu());
+
+                // System.out.println(processador.exibirStatusCpu());
                 // System.out.println(memoriaRam.exibirStatusMemoriaRam());
             }
         }, delay, interval);

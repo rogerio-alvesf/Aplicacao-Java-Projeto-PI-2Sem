@@ -40,19 +40,20 @@ public class Processador {
     public void setFrequencia(Long frequencia) {
         this.frequencia = frequencia;
     }
-    
+
     public void armazenarInformacoesCpu(Integer idMaquina) {
-        if(ProcessadorModel.verificarInformacoes(idMaquina) == false){
+        if (ProcessadorModel.verificarInformacoes(idMaquina) == false) {
             nome = maquina.getProcessador().getNome();
+
             ProcessadorModel.armazenarInformacoes(idMaquina, nome);
-            System.out.println("Processador já cadastrado.");
+            return;
         }
+        System.out.println("Processador já cadastrado.");
     }
 
     public void armazenarStatusCpu(Integer idMaquina) {
         frequencia = maquina.getProcessador().getFrequencia();
         uso = maquina.getProcessador().getUso();
-        System.out.println(idMaquina + "\n" + frequencia + "\n" + uso + "\n");
         ProcessadorModel.armazenarStatus(idMaquina, frequencia, uso);
     }
 
