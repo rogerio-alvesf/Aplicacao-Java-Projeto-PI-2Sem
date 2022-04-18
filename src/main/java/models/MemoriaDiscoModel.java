@@ -46,7 +46,7 @@ public class MemoriaDiscoModel {
             Long EspacoLivre,
             String Modelo) {
         String QUERY = String.format("INSERT INTO Log_MemoriaMassa (Leitura, Escrita, "
-                + "TempoTranferencia, EspacoLivre, Fk_MemoriaMemoria) values (%d, %d, %d, %d, (SELECT ID_MemoriaMassa from MemoriaMassa WHERE FK_Computador = %d and MemoriaMassa.Modelo = '%s'));",
+                + "TempoTranferencia, EspacoLivre, Fk_MemoriaMassa) values (%d, %d, %d, %d, (SELECT ID_MemoriaMassa from MemoriaMassa WHERE FK_Computador = %d and Modelo = '%s'));",
                 Leitura,
                 Escrita,
                 TempoTranferencia,
@@ -59,7 +59,7 @@ public class MemoriaDiscoModel {
 
             stmt.executeUpdate(QUERY);
         } catch (SQLException erro) {
-            throw new RuntimeException("Falha na inserção Dados na Tabela Log Memoria Massa" + erro);
+            throw new RuntimeException("Falha na inserção Dados na Tabela Log Memoria Massa " + erro);
         }
     }
 }
