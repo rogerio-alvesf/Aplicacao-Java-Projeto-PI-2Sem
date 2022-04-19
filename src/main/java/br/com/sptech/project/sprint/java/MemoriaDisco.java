@@ -93,7 +93,7 @@ public class MemoriaDisco {
             }
         }
         else{
-            System.out.println("Memoria de massa já existe");
+            System.out.println("Memoria de massa já está cadastrado.");
         }
     }
 

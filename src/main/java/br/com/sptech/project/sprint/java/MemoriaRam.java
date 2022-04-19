@@ -47,7 +47,7 @@ public class MemoriaRam {
             MemoriaRamModel.armazenarInformacoes(idMaquina, total);
             return;
         }
-        System.out.println("Dados já cadastrados");
+        System.out.println("Memoria Ram já está cadastrada.");
     }
 
     public void armazenarStatusMemoriaRam(Integer idMaquina) {

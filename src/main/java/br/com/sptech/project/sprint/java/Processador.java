@@ -48,7 +48,7 @@ public class Processador {
             ProcessadorModel.armazenarInformacoes(idMaquina, nome);
             return;
         }
-        System.out.println("Processador já cadastrado.");
+        System.out.println("Processador já está cadastrado.");
     }
 
     public void armazenarStatusCpu(Integer idMaquina) {

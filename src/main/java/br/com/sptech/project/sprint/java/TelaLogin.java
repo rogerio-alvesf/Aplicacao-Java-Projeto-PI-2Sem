@@ -1,5 +1,9 @@
 package br.com.sptech.project.sprint.java;
 
+import static br.com.sptech.project.sprint.java.App.ColetarDados;
+import java.util.Scanner;
+import models.Login;
+
 public class TelaLogin extends javax.swing.JFrame {
     
     Maquina maquinaAcessada = new Maquina();
@@ -24,9 +28,13 @@ public class TelaLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         label1.setAlignment(java.awt.Label.CENTER);
         label1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        label1.setText("Login Máquina");
+        label1.setText("LOGIN PARA ARMAZENAR INFORMAÇÕES DA MÁQUINA");
+        jPanel1.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 61, -1, -1));
+        label1.getAccessibleContext().setAccessibleName("LOGAR PARA ARMAZENAR INFORMAÇÕES DA MÁQUINA");
 
         txtNumeracaoMaquina.setBackground(new java.awt.Color(255, 255, 255));
         txtNumeracaoMaquina.addActionListener(new java.awt.event.ActionListener() {
@@ -34,83 +42,46 @@ public class TelaLogin extends javax.swing.JFrame {
                 txtNumeracaoMaquinaActionPerformed(evt);
             }
         });
+        jPanel1.add(txtNumeracaoMaquina, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 111, 130, -1));
 
         txtSenhaMaquina.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtSenhaMaquina, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 153, 130, -1));
 
         label2.setName(""); // NOI18N
         label2.setText("Nº da máquina:");
+        jPanel1.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 116, -1, -1));
 
         label3.setName(""); // NOI18N
         label3.setText("Senha:");
+        jPanel1.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 158, -1, -1));
 
         btnAcessarMaquina.setBackground(new java.awt.Color(76, 136, 171));
         btnAcessarMaquina.setForeground(new java.awt.Color(0, 0, 0));
         btnAcessarMaquina.setText("Acessar");
         btnAcessarMaquina.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnAcessarMaquina.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnAcessarMaquina.setHideActionText(true);
         btnAcessarMaquina.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAcessarMaquinaActionPerformed(evt);
             }
         });
+        jPanel1.add(btnAcessarMaquina, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 201, 74, -1));
 
         lblInformacaoMaquina.setColumns(20);
         lblInformacaoMaquina.setRows(5);
         lblInformacaoMaquina.setEnabled(false);
         jScrollPane1.setViewportView(lblInformacaoMaquina);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(87, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtNumeracaoMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtSenhaMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(72, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAcessarMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(120, 120, 120))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtNumeracaoMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtSenhaMaquina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnAcessarMaquina)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(523, 235, 280, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,21 +99,48 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void btnAcessarMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarMaquinaActionPerformed
         // TODO add your handling code here:
-        String numeracaoMaquinaDigitada = txtNumeracaoMaquina.getText();
-        String senhaAcessoMaquinaDigitada = txtSenhaMaquina.getText();
 
-        if(numeracaoMaquinaDigitada.equals("")){
-            lblInformacaoMaquina.setText("A numeração da máquina está inválida.");
-        }else if(senhaAcessoMaquinaDigitada.trim().equals("")){
-            lblInformacaoMaquina.setText("A senha de acesso da máquina está inválida.");   
-        }else{
-            maquinaAcessada.setNumeracaoMaquina(Integer.valueOf(numeracaoMaquinaDigitada));
-            maquinaAcessada.setSenhaAcessoMaquina(senhaAcessoMaquinaDigitada);
+        Integer leitorNumeracaoMaquina = Integer.valueOf(txtNumeracaoMaquina.getText());
+        String leitorSenhaMaquina = txtSenhaMaquina.getText();
+        Maquina maquinaAcessada = new Maquina();
+
+        lblInformacaoMaquina.setText("Logar máquina para gerar coletar i"
+                + "\nQual a numeração da máquina:");
+
+        Integer numeracaoMaquinaDigitado = leitorNumeracaoMaquina;
+
+        maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
+
+        while (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false) {
+            lblInformacaoMaquina.setText("Númeração da máquina está inválida. Dígite "
+                    + "uma numeração de máquina válida:");
+            numeracaoMaquinaDigitado = leitorNumeracaoMaquina;
+            maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
         }
-        
-        lblInformacaoMaquina.setText(String.format("Numeração máquina: %s\n"
-                + "Senha de acesso: %s", maquinaAcessada.getNumeracaoMaquina(), 
-                maquinaAcessada.getSenhaAcessoMaquina()));
+
+        lblInformacaoMaquina.setText("Qual a senha de acesso da máquina:");
+        String senhaMaquinaDigitado = leitorSenhaMaquina;
+
+        maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
+
+        while (maquinaAcessada.validarSenha(senhaMaquinaDigitado) == false) {
+            lblInformacaoMaquina.setText("Senha da máquina está inválida. Dígite uma "
+                    + "senha de máquina válida:");
+            senhaMaquinaDigitado = leitorSenhaMaquina;
+            maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
+        }
+
+        Boolean respostaLogin = Login.realizarLogin(
+                numeracaoMaquinaDigitado,
+                senhaMaquinaDigitado);
+
+        if (respostaLogin) {
+            lblInformacaoMaquina.setText(String.format("Máquina %s está logada.",
+                    maquinaAcessada.getNumeracaoMaquina()));
+            ColetarDados(numeracaoMaquinaDigitado);
+        }else {
+            lblInformacaoMaquina.setText("Computador não exite!!!");
+        }
     }//GEN-LAST:event_btnAcessarMaquinaActionPerformed
 
     public static void main(String args[]) {
@@ -173,7 +171,10 @@ public class TelaLogin extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaLogin().setVisible(true);
+                
+                TelaLogin telaLogin = new TelaLogin();
+                telaLogin.setExtendedState(6);
+                telaLogin.setVisible(true);
             }
         });
     }

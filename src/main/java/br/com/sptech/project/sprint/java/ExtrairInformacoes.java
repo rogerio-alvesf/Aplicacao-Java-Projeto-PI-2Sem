@@ -26,9 +26,9 @@ public class ExtrairInformacoes {
     }
 
     public void exbirInformacoesComponentes() {
-        System.out.println(processador.exibirInformacoesCpu());
+        //System.out.println(processador.exibirInformacoesCpu());
         // System.out.println(memoriaRam.exibirInformacoesMemoriaRam());
-        System.out.println(memoriaDisco.exibirInformacoesMemoriaDisco());
+        //System.out.println(memoriaDisco.exibirInformacoesMemoriaDisco());
     }
 
     public void exibirStatusComponentes(Integer idMaquina) {
@@ -41,7 +41,6 @@ public class ExtrairInformacoes {
                 processador.armazenarStatusCpu(idMaquina);
                 memoriaRam.armazenarStatusMemoriaRam(idMaquina);
                 memoriaDisco.armazenarStatusmMemoriaDisco(idMaquina);
-
                 // System.out.println(processador.exibirStatusCpu());
                 // System.out.println(memoriaRam.exibirStatusMemoriaRam());
             }
