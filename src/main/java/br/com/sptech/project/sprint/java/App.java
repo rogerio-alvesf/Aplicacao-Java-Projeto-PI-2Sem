@@ -1,4 +1,4 @@
-1package br.com.sptech.project.sprint.java;
+package br.com.sptech.project.sprint.java;
 
 import java.util.Scanner;
 import models.Login;
