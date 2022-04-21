@@ -14,7 +14,7 @@ public class App {
         Scanner leitorSenhaMaquina = new Scanner(System.in);
         Maquina maquinaAcessada = new Maquina();
 
-        System.out.println("*".repeat(15) + "Logar máquina para gerar coletar i"
+        System.out.println("*".repeat(15) + "Logar máquina para coletar i"
                 + "nformações" + "*".repeat(15) + "\nQual a numeração da máquin"
                 + "a:");
 
@@ -46,11 +46,11 @@ public class App {
                 senhaMaquinaDigitado);
 
         if (respostaLogin) {
-            System.out.println(String.format("Máquina %s está logada.",
+            System.out.println(String.format("Máquina %s está logado.",
                     maquinaAcessada.getNumeracaoMaquina()));
             ColetarDados(numeracaoMaquinaDigitado);
         }else {
-            System.out.println("Computador não exite!!!");
+            System.out.println("Computador não está cadastrado!!!");
             Logar();
         }
     }
