@@ -21,6 +21,10 @@ public class Login {
         } catch (SQLException erro) {
             throw new RuntimeException("Computador não existe" + erro);
         }
+        
+       
     }
+    
+    
     
 }
