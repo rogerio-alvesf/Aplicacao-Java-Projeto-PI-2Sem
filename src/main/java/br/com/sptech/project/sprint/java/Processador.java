@@ -1,7 +1,7 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
-import models.ProcessadorModel;
+import modelsAzure.ProcessadorModel;
 
 public class Processador {
 

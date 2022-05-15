@@ -8,7 +8,7 @@ public class ConexaoBanco {
 
     public static final String URL = "jdbc:mysql://localhost:3306/farmagraphsolutions";
     public static final String USER = "root";
-    public static final String PASS = "";
+    public static final String PASS = "@Planeta2011";
     public static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
     public static Connection getConnection() {

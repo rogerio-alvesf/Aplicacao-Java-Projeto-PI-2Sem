@@ -6,19 +6,20 @@ import java.sql.SQLException;
 
 public class ConexaoBancoAzure {
 
-    public static final String URl = "jdbc:sqlserver://localhost\\sqlexpress";
-    public static final String USER = "sa";
-    public static final String PASSS = "";
+    public static final String URL =  "jdbc:sqlserver://localhost:1433;databaseName=farmagraphsolutions;user=root;password=@Planeta2011;trustServerCertificate=true";
+
+    public static final String USER = "root";
+    public static final String PASS = "@Planeta2011";
     public static final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 
     public static Connection getConnection() {
         try {
-            Class.forName(DRIVER);
-            return DriverManager.getConnection(URl, USER, PASSS);
+          //  Class.forName(DRIVER);
+            return DriverManager.getConnection(URL);
 
-        } catch (ClassNotFoundException | SQLException erro) {
-            throw new RuntimeException("Erro na conexão com o azure" + erro);
+        } catch ( SQLException erro) {
+
+            throw new RuntimeException("Erro na Conexão com o mssql " + erro.getMessage());
         }
     }
-
 }
