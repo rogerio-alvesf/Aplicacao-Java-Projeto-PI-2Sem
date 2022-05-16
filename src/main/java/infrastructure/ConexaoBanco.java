@@ -19,7 +19,7 @@ public class ConexaoBanco {
 
         } catch (ClassNotFoundException | SQLException erro) {
 
-            throw new RuntimeException("Erro na Conexão com o Mysql" + erro);
+            throw new RuntimeException("Erro na Conexão com o Mysql " + erro);
         }
     }
 }

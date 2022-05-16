@@ -6,7 +6,12 @@ import java.sql.SQLException;
 
 public class ConexaoBancoAzure {
 
-    public static final String URL =  "jdbc:sqlserver://localhost:1433;databaseName=farmagraphsolutions;user=Victor;password=Banho009#;trustServerCertificate=true";
+    public static final String URL =  "jdbc:sqlserver://farmagraphsolutions.database.windows.net;"
+            + "databaseName=farmagraphsolutions;"
+            + "user=adminProjeto;"
+            + "password=2ads$grupo2;"
+            + "encrypt=true;"
+            + "trustServerCertificate=false;";
     
     public static final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 
