@@ -10,7 +10,7 @@ public class Login {
 
     public static Boolean realizarLogin(Integer ID, String Senha) {
         String Query = String.format("SELECT ID_Computador, Senha From Computador"
-                + "WHERE ID_Computador = %d AND Senha = '%s';", ID, Senha);
+                + " WHERE ID_Computador = %d AND Senha = '%s';", ID, Senha);
 
         try (Connection conn = ConexaoBancoAzure.getConnection();
                 Statement stmt = conn.createStatement();
@@ -19,7 +19,7 @@ public class Login {
             return rs.next();
 
         } catch (SQLException erro) {
-            throw new RuntimeException("Computador nã existe" + erro);
+            throw new RuntimeException("Computador não existe" + erro);
         }
     }
 }

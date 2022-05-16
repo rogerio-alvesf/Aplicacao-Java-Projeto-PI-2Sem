@@ -1,7 +1,7 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
-import models.MemoriaRamModel;
+import modelsAzure.MemoriaRamModel;
 
 public class MemoriaRam {
     

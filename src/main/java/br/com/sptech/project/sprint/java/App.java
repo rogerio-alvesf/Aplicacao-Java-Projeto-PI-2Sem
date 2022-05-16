@@ -1,7 +1,7 @@
 package br.com.sptech.project.sprint.java;
 
 import java.util.Scanner;
-import models.Login;
+import modelsAzure.Login;
 
 public class App {
 

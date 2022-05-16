@@ -46,7 +46,7 @@ public class MemoriaDiscoModel {
             Long EspacoLivre,
             String Modelo) {
         String QUERY = String.format("INSERT INTO Log_MemoriaMassa (Leitura, Escrita, "
-                + "TempoTranferencia, EspacoLivre, Fk_MemoriaMassa) values (%d, %d, %d, %d, (SELECT ID_MemoriaMassa from MemoriaMassa WHERE FK_Computador = %d and Modelo = '%s'));",
+                + "TempoTranferencia, EspacoLivre, Fk_MemoriaMassa) values (%d, %d, %d, %d, (SELECT ID_MemoriaMassa from MemoriaMassa WHERE FK_Computador = %d and CONVERT(VARCHAR(MAX),Modelo) = '%s'));",
                 Leitura,
                 Escrita,
                 TempoTranferencia,

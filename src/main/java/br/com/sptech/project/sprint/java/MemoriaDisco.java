@@ -5,7 +5,7 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
 import java.util.List;
 import com.github.britooo.looca.api.group.discos.DiscosGroup;
-import models.MemoriaDiscoModel;
+import modelsAzure.MemoriaDiscoModel;
 
 public class MemoriaDisco {
 
@@ -85,14 +85,13 @@ public class MemoriaDisco {
     }
 
     public void armazenarInformacoesMemoriaDisco(Integer idMaquina) {
-        if(MemoriaDiscoModel.verificarInformacoes(idMaquina) == false){
+        if (MemoriaDiscoModel.verificarInformacoes(idMaquina) == false) {
             for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
                 modelo = Discos.get(i).getModelo();
                 valorTamanhoTotal = maquina.getGrupoDeDiscos().getDiscos().get(i).getTamanho();
                 MemoriaDiscoModel.armazenarInformacoes(idMaquina, modelo, valorTamanhoTotal);
             }
-        }
-        else{
+        } else {
             System.out.println("Memoria de massa já está cadastrado.");
         }
     }
@@ -104,7 +103,7 @@ public class MemoriaDisco {
             valorLeituras = Discos.get(i).getLeituras();
             valorTempoDeTransferencia = Discos.get(i).getTempoDeTransferencia();
             modelo = Discos.get(i).getModelo();
-            
+
             MemoriaDiscoModel.armazenarStatus(idMaquina, valorLeituras, valorEscrita, valorTempoDeTransferencia, espacoLivre, modelo);
         }
     }

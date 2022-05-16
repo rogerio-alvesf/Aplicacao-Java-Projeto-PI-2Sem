@@ -56,6 +56,7 @@ public class MemoriaDiscoModel {
                 IdMaquina,
                 Modelo);
 
+           
         try (Connection conn = ConexaoBancoAzure.getConnection();
                 Statement stmt = conn.createStatement();) {
 
