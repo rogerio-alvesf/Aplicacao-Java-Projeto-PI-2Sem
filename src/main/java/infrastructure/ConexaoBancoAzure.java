@@ -17,10 +17,10 @@ public class ConexaoBancoAzure {
 
     public static Connection getConnection() {
         try {
-          //  Class.forName(DRIVER);
+            Class.forName(DRIVER);
             return DriverManager.getConnection(URL);
 
-        } catch ( SQLException erro) {
+        } catch ( ClassNotFoundException | SQLException erro) {
 
             throw new RuntimeException("Erro na Conexão com o mssql " + erro.getMessage());
         }
