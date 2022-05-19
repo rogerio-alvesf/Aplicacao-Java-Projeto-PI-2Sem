@@ -2,7 +2,7 @@ package br.com.sptech.project.sprint.java;
 
 import static br.com.sptech.project.sprint.java.App.ColetarDados;
 import java.awt.Color;
-import models.Login;
+import modelsAzure.Login;
 
 public class TelaLogin extends javax.swing.JFrame {
     
@@ -145,7 +145,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void btnAcessarMaquinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAcessarMaquinaActionPerformed
         // TODO add your handling code here:
-        label1.setText("LOGIN INFORMAÇÕES DA MAQUINA");
+        //label1.setText("LOGIN INFORMAÇÕES DA MAQUINA");
         Integer leitorNumeracaoMaquina = Integer.valueOf(txtNumeracaoMaquina.getText());
         String leitorSenhaMaquina = txtSenhaMaquina.getText();
         Maquina maquinaAcessada = new Maquina();
@@ -164,7 +164,7 @@ public class TelaLogin extends javax.swing.JFrame {
             maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
         }
 
-        lblInformacaoMaquina.setText("Qual a senha de acesso da máquina:");
+        lblInformacaoMaquina.setText("Erro no login.");
         String senhaMaquinaDigitado = leitorSenhaMaquina;
 
         maquinaAcessada.setSenhaAcessoMaquina(senhaMaquinaDigitado);
