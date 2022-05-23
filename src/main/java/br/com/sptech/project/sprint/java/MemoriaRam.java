@@ -1,17 +1,24 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
+import infrastructure.GravacaoLogs;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import modelsAzure.MemoriaRamModel;
 
 public class MemoriaRam {
-    
+
     private Long total;
     private Long uso;
     private Long disponivel;
 
     Looca maquina = new Looca();
 
-    public MemoriaRam(Long total, Long uso, Long disponivel) { 
+    GravacaoLogs logs = new GravacaoLogs();
+
+    public MemoriaRam(Long total, Long uso, Long disponivel) {
         this.total = total;
         this.uso = uso;
         this.disponivel = disponivel;
@@ -42,7 +49,7 @@ public class MemoriaRam {
     }
 
     public void armazenarInformacoesMemoriaRam(Integer idMaquina) {
-        if(MemoriaRamModel.verificarInformacoes(idMaquina) == false){
+        if (MemoriaRamModel.verificarInformacoes(idMaquina) == false) {
             total = maquina.getMemoria().getTotal();
             MemoriaRamModel.armazenarInformacoes(idMaquina, total);
             return;
@@ -50,10 +57,15 @@ public class MemoriaRam {
         System.out.println("Memoria Ram já está cadastrada.");
     }
 
-    public void armazenarStatusMemoriaRam(Integer idMaquina) {
+    public void armazenarStatusMemoriaRam(Integer idMaquina) throws IOException {
         uso = maquina.getMemoria().getEmUso();
         disponivel = maquina.getMemoria().getDisponivel();
-        //logs
+        String informacoesLogs = String.format("Maquina %d \n"
+                + "Memória em uso: %s\n"
+                + "Memória disponivel: %s\n", idMaquina, maquina.getMemoria().getEmUso(), maquina.getMemoria().getDisponivel())
+                + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)) + "\n....................................................................................................";
+
+        GravacaoLogs.teste(informacoesLogs);
         MemoriaRamModel.armazenarStatus(idMaquina, uso, disponivel);
     }
 

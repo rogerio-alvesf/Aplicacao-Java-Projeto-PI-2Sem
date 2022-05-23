@@ -23,9 +23,6 @@ public class Processador {
         this.frequencia = frequencia;
     }
 
-    String informacoesLogs = String.format("frequencia do processador: %s, em uso: %.2f ", maquina.getProcessador().getFrequencia(), maquina.getProcessador().getUso())
-    + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)) + "\n=============================================================================================================\n";
-
     public String getNome() {
         return nome;
     }
@@ -64,6 +61,13 @@ public class Processador {
         frequencia = maquina.getProcessador().getFrequencia();
         uso = maquina.getProcessador().getUso();
         ProcessadorModel.armazenarStatus(idMaquina, frequencia, uso);
+
+        String informacoesLogs = String.format("Maquina: %d \n"
+                + "Frequencia do processador: %s \n"
+                + "Em uso: %.2f \n"
+                + "", idMaquina, maquina.getProcessador().getFrequencia(), maquina.getProcessador().getUso())
+                + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)) + "\n....................................................................................................";
+
         GravacaoLogs.teste(informacoesLogs);
     }
 

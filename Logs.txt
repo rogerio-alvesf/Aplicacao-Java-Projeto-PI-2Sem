@@ -1,85 +1,570 @@
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Maquina 0 logado com sucesso,
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Maquina 1 logado com sucesso,
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
-Maquina 1 logado com sucesso,domingo, 22 de maio de 2022
-Maquina 1 logado com sucesso,22 de mai de 2022 23:09:00
-Maquina 1domingo, 22 de maio de 2022
-=============================== logado com sucesso,
-Maquina 1 logado com sucesso,domingo, 22 de maio de 2022
- =================================== 
-
-Maquina 1 logado com sucesso domingo, 22 de maio de 2022
- =================================== 
-
-Maquina 1 logado com sucesso domingo, 22 de maio de 2022
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
 =================================================================================================
 
-Maquina 1 logado com sucesso domingo, 22 de maio de 2022
-=================================================================================================
-
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+frequencia do processador: 1997000000, em uso: 56,17 23 de mai de 2022 16:39:13
 =============================================================================================================
 
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+frequencia do processador: 1997000000, em uso: 56,17 23 de mai de 2022 16:39:13
 =============================================================================================================
 
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+frequencia do processador: 1997000000, em uso: 56,17 23 de mai de 2022 16:39:13
 =============================================================================================================
 
-Maquina 1 logado com sucesso domingo, 22 de maio de 2022
-=================================================================================================
-
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
-=============================================================================================================
-
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
-=============================================================================================================
-
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
-=============================================================================================================
-
-frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
+frequencia do processador: 1997000000, em uso: 56,17 23 de mai de 2022 16:39:13
 =============================================================================================================
 
 Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
 =================================================================================================
 
-frequencia do processador: 1997000000, em uso: 36,4323 de mai de 2022 00:00:21
+frequencia do processador: 1997000000, em uso: 21,30 23 de mai de 2022 17:12:58
 =============================================================================================================
 
-frequencia do processador: 1997000000, em uso: 36,4323 de mai de 2022 00:00:21
-=============================================================================================================
-
-Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
-=================================================================================================
-
-frequencia do processador: 1997000000, em uso: 28,25 23 de mai de 2022 00:03:55
-=============================================================================================================
-
-frequencia do processador: 1997000000, em uso: 28,25 23 de mai de 2022 00:03:55
+frequencia do processador: 1997000000, em uso: 21,30 23 de mai de 2022 17:12:58
 =============================================================================================================
 
 Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
 =================================================================================================
 
-frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+frequencia do processador: 1997000000, em uso: 25,73 23 de mai de 2022 17:24:57
 =============================================================================================================
 
-frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+espaço livre da memória do disco: 113049607168, valor da escrita: 5414159, valor da leitura: 130102607, valor do tempo de transferência: 282074041, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:25:07
 =============================================================================================================
 
-frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+frequencia do processador: 1997000000, em uso: 25,73 23 de mai de 2022 17:24:57
 =============================================================================================================
 
+espaço livre da memória do disco: 113049611264, valor da escrita: 5414159, valor da leitura: 130102607, valor do tempo de transferência: 282074041, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:25:13
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 25,73 23 de mai de 2022 17:24:57
+=============================================================================================================
+
+espaço livre da memória do disco: 113049611264, valor da escrita: 5414159, valor da leitura: 130102607, valor do tempo de transferência: 282074041, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:25:19
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+frequencia do processador: 1997000000, em uso: 33,35 23 de mai de 2022 17:40:45
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037143040, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:20
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037298688, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:26
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037298688, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:32
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037302784, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:38
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037372416, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:44
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037376512, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:49
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037573120, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:49:55
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 32,85 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+memória em uso: 3692367872, memória disponivel: 324501504 23 de mai de 2022 17:49:11
+=============================================================================================================
+
+espaço livre da memória do disco: 113037573120, valor da escrita: 5434985, valor da leitura: 130688468, valor do tempo de transferência: 282620360, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 17:50:01
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+Maquina: 1, frequencia do processador: 1997000000, em uso: 18,26 23 de mai de 2022 18:07:52
+=============================================================================================================
+
+memória em uso: 3661045760, memória disponivel: 355823616 23 de mai de 2022 18:07:37
+=============================================================================================================
+
+espaço livre da memória do disco: 113039559680, valor da escrita: 5446761, valor da leitura: 131125685, valor do tempo de transferência: 282967898, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:07:53
+=============================================================================================================
+
+Maquina: 1, frequencia do processador: 1997000000, em uso: 32,23 23 de mai de 2022 18:08:00
+=============================================================================================================
+
+memória em uso: 3661045760, memória disponivel: 355823616 23 de mai de 2022 18:07:37
+=============================================================================================================
+
+espaço livre da memória do disco: 113039756288, valor da escrita: 5446761, valor da leitura: 131125685, valor do tempo de transferência: 282967898, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:08:01
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+Maquina: 1, frequencia do processador: 1997000000, em uso: 18,38 23 de mai de 2022 18:17:38
+=============================================================================================================
+
+memória em uso: 3654041600, memória disponivel: 362827776 23 de mai de 2022 18:17:27
+=============================================================================================================
+
+espaço livre da memória do disco: 113039870976, valor da escrita: 5455145, valor da leitura: 131408607, valor do tempo de transferência: 283297191, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:17:40
+=============================================================================================================
+
+Maquina: 1, frequencia do processador: 1997000000, em uso: 23,14 23 de mai de 2022 18:17:47
+=============================================================================================================
+
+memória em uso: 3654041600, memória disponivel: 362827776 23 de mai de 2022 18:17:27
+=============================================================================================================
+
+espaço livre da memória do disco: 113039879168, valor da escrita: 5455145, valor da leitura: 131408607, valor do tempo de transferência: 283297191, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:17:48
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+Maquina: 1 
+ frequencia do processador: 1997000000 
+ em uso: 26,71 
+23 de mai de 2022 18:20:38
+=============================================================================================================
+
+memória em uso: 3662942208, memória disponivel: 353927168 23 de mai de 2022 18:20:27
+=============================================================================================================
+
+espaço livre da memória do disco: 113042242560, valor da escrita: 5457924, valor da leitura: 131541628, valor do tempo de transferência: 283376492, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:20:39
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 26,18 
+23 de mai de 2022 18:58:53
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043454976, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:58:54
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 31,86 
+23 de mai de 2022 18:59:01
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043454976, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:02
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 29,49 
+23 de mai de 2022 18:59:09
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043459072, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:10
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 18,34 
+23 de mai de 2022 18:59:17
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043450880, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:18
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 15,47 
+23 de mai de 2022 18:59:25
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043581952, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:27
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 16,77 
+23 de mai de 2022 18:59:33
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043581952, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:35
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 13,14 
+23 de mai de 2022 18:59:42
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043590144, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:43
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 10,06 
+23 de mai de 2022 18:59:50
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043971072, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:51
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 40,95 
+23 de mai de 2022 18:59:58
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043975168, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 18:59:59
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 12,14 
+23 de mai de 2022 19:00:06
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043975168, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:07
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 6,96 
+23 de mai de 2022 19:00:14
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043987456, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:16
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 26,84 
+23 de mai de 2022 19:00:22
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113043987456, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:24
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 16,81 
+23 de mai de 2022 19:00:30
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113044184064, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:32
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 9,57 
+23 de mai de 2022 19:00:39
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113044188160, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:40
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 6,77 
+23 de mai de 2022 19:00:47
+=============================================================================================================
+memória em uso: 3670659072, memória disponivel: 346210304 23 de mai de 2022 18:58:38
+=============================================================================================================
+
+espaço livre da memória do disco: 113044188160, valor da escrita: 5476228, valor da leitura: 131882834, valor do tempo de transferência: 283872003, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:00:48
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 20,71 
+23 de mai de 2022 19:05:45
+=============================================================================================================
+Memória em uso: 3709026304
+Memória disponivel: 307843072
+23 de mai de 2022 19:05:32
+=============================================================================================================
+espaço livre da memória do disco: 113046522880, valor da escrita: 5480987, valor da leitura: 132018386, valor do tempo de transferência: 283974784, e modelo NVME KBG40ZNS128G NVME KIOXIA 128GB (UNIDADES DE DISCO PADRÃO) 23 de mai de 2022 19:05:46
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 32,58 
+23 de mai de 2022 19:18:21
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3685527552
+Memória disponivel: 331341824
+23 de mai de 2022 19:18:21
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113049205760
+Valor de escrita: 5490318 
+Valor de leitura: 132317976 
+Valor do tempo de transferência: 284177973 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão)23 de mai de 2022 19:18:22
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 33,72 
+23 de mai de 2022 19:18:29
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3688337408
+Memória disponivel: 328531968
+23 de mai de 2022 19:18:29
+=============================================================================================================
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+=================================================================================================
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 20,09 
+23 de mai de 2022 19:21:55
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3728379904
+Memória disponivel: 288489472
+23 de mai de 2022 19:21:55
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113051929600
+Valor de escrita: 5492436 
+Valor de leitura: 132379771 
+Valor do tempo de transferência: 284229955 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão)23 de mai de 2022 19:21:56
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 14,52 
+23 de mai de 2022 19:22:03
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3719798784
+Memória disponivel: 297070592
+23 de mai de 2022 19:22:03
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113051929600
+Valor de escrita: 5492436 
+Valor de leitura: 132379771 
+Valor do tempo de transferência: 284229955 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão)23 de mai de 2022 19:22:04
+=============================================================================================================
+
+Maquina 1 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+....................................................................................................
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 20,85 
+23 de mai de 2022 19:26:24
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3714904064
+Memória disponivel: 301965312
+23 de mai de 2022 19:26:24
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113054497792
+Valor de escrita: 5495207 
+Valor de leitura: 132460799 
+Valor do tempo de transferência: 284281916 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:26:26
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 28,38 
+23 de mai de 2022 19:26:32
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3723759616
+Memória disponivel: 293109760
+23 de mai de 2022 19:26:32
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113054497792
+Valor de escrita: 5495207 
+Valor de leitura: 132460799 
+Valor do tempo de transferência: 284281916 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:26:34
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 27,26 
+23 de mai de 2022 19:26:40
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3709374464
+Memória disponivel: 307494912
+23 de mai de 2022 19:26:40
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113054510080
+Valor de escrita: 5495207 
+Valor de leitura: 132460799 
+Valor do tempo de transferência: 284281916 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:26:42
+=============================================================================================================
+
+Maquina: 1 
+Frequencia do processador: 1997000000 
+Em uso: 31,39 
+23 de mai de 2022 19:26:48
+=============================================================================================================
+Maquina 1 
+Memória em uso: 3691405312
+Memória disponivel: 325464064
+23 de mai de 2022 19:26:48
+=============================================================================================================
+Maquina 1 
+Espaço livre da memória do disco: 113054731264
+Valor de escrita: 5495207 
+Valor de leitura: 132460799 
+Valor do tempo de transferência: 284281916 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:26:50
+=============================================================================================================
+
+Maquina 2 logada com sucesso 
+segunda-feira, 23 de maio de 2022
+....................................................................................................
+Maquina: 2 
+Frequencia do processador: 1997000000 
+Em uso: 16,88 
+23 de mai de 2022 19:33:49
+....................................................................................................
+Maquina 2 
+Memória em uso: 3618267136
+Memória disponivel: 398602240
+23 de mai de 2022 19:33:49
+....................................................................................................
+Maquina 2 
+Espaço livre da memória do disco: 113057762304
+Valor de escrita: 5504599 
+Valor de leitura: 132677036 
+Valor do tempo de transferência: 284463139 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:33:50
+=============================================================================================================
+
+Maquina: 2 
+Frequencia do processador: 1997000000 
+Em uso: 29,09 
+23 de mai de 2022 19:33:57
+....................................................................................................
+Maquina 2 
+Memória em uso: 3629248512
+Memória disponivel: 387620864
+23 de mai de 2022 19:33:57
+....................................................................................................
+Maquina 2 
+Espaço livre da memória do disco: 113057893376
+Valor de escrita: 5504599 
+Valor de leitura: 132677036 
+Valor do tempo de transferência: 284463139 
+Modelo NVMe KBG40ZNS128G NVMe KIOXIA 128GB (Unidades de disco padrão) 
+23 de mai de 2022 19:33:58
+=============================================================================================================
+
+Maquina: 2 
+Frequencia do processador: 1997000000 
+Em uso: 18,70 
+23 de mai de 2022 19:34:05
+....................................................................................................
+Maquina 2 
+Memória em uso: 3653156864
+Memória disponivel: 363712512
+23 de mai de 2022 19:34:05
+....................................................................................................

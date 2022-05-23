@@ -5,6 +5,11 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;
 import java.util.List;
 import com.github.britooo.looca.api.group.discos.DiscosGroup;
+import infrastructure.GravacaoLogs;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import modelsAzure.MemoriaDiscoModel;
 
 public class MemoriaDisco {
@@ -21,6 +26,8 @@ public class MemoriaDisco {
     DiscosGroup Disco = new DiscosGroup();
 
     List<Disco> Discos = Disco.getDiscos();
+
+    GravacaoLogs logs = new GravacaoLogs();
 
     public MemoriaDisco(Long valorTamanhoTotal,
             String modelo,
@@ -96,14 +103,21 @@ public class MemoriaDisco {
         }
     }
 
-    public void armazenarStatusmMemoriaDisco(Integer idMaquina) {
+    public void armazenarStatusmMemoriaDisco(Integer idMaquina) throws IOException {
         for (int i = 0; i < Disco.getQuantidadeDeDiscos(); i++) {
             espacoLivre = maquina.getGrupoDeDiscos().getTamanhoTotal() - Disco.getVolumes().get(i).getDisponivel();
             valorEscrita = Discos.get(i).getEscritas();
             valorLeituras = Discos.get(i).getLeituras();
             valorTempoDeTransferencia = Discos.get(i).getTempoDeTransferencia();
             modelo = Discos.get(i).getModelo();
-                        //logs
+            String informacoesLogs = String.format("Maquina %d \n"
+                    + "Espaço livre da memória do disco: %s\n"
+                    + "Valor de escrita: %s \n"
+                    + "Valor de leitura: %s \n"
+                    + "Valor do tempo de transferência: %s \n"
+                    + "Modelo %s \n", idMaquina, espacoLivre, valorEscrita, valorLeituras, valorTempoDeTransferencia, modelo)
+                    + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)) + "\n=============================================================================================================\n";
+            GravacaoLogs.teste(informacoesLogs);
 
             MemoriaDiscoModel.armazenarStatus(idMaquina, valorLeituras, valorEscrita, valorTempoDeTransferencia, espacoLivre, modelo);
         }

@@ -1,7 +1,10 @@
 package br.com.sptech.project.sprint.java;
 
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ExtrairInformacoes {
 
@@ -38,9 +41,14 @@ public class ExtrairInformacoes {
         temporizador.scheduleAtFixedRate(
                 new TimerTask() {
             public void run() {
-                processador.armazenarStatusCpu(idMaquina);
-                memoriaRam.armazenarStatusMemoriaRam(idMaquina);
-                memoriaDisco.armazenarStatusmMemoriaDisco(idMaquina);
+                try {
+                    processador.armazenarStatusCpu(idMaquina);
+                    memoriaRam.armazenarStatusMemoriaRam(idMaquina);
+                    memoriaDisco.armazenarStatusmMemoriaDisco(idMaquina);
+                } catch (IOException ex) {
+                    Logger.getLogger(ExtrairInformacoes.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
                 // System.out.println(processador.exibirStatusCpu());
                 // System.out.println(memoriaRam.exibirStatusMemoriaRam());
             }

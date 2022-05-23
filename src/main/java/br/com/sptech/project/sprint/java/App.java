@@ -29,9 +29,6 @@ public class App {
 
         maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
 
-        String informacaoLog = String.format("Maquina %s logado com sucesso ", maquinaAcessada.getNumeracaoMaquina())
-                + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)) + "\n=================================================================================================\n";
-
         while (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false) {
             System.out.println("Númeração da máquina está inválida. Dígite "
                     + "uma numeração de máquina válida:");
@@ -59,6 +56,9 @@ public class App {
             System.out.println(String.format("Máquina %s está logado.",
                     maquinaAcessada.getNumeracaoMaquina()));
             ColetarDados(numeracaoMaquinaDigitado);
+            
+            String informacaoLog = String.format("Maquina %s logada com sucesso \n", maquinaAcessada.getNumeracaoMaquina())
+                    + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)) + "\n....................................................................................................";
             GravacaoLogs.teste(informacaoLog);
         } else {
             System.out.println("Computador não está cadastrado!!!");
