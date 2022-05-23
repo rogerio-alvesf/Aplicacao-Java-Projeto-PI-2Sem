@@ -1,15 +1,22 @@
 package br.com.sptech.project.sprint.java;
 
+import infrastructure.GravacaoLogs;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Scanner;
 import modelsAzure.Login;
 
 public class App {
 
-    public static void main(String[] args) {
+    GravacaoLogs logs = new GravacaoLogs();
+
+    public static void main(String[] args) throws IOException {
         Logar();
     }
 
-    public static void Logar() {
+    public static void Logar() throws IOException {
         Scanner leitorNumeracaoMaquina = new Scanner(System.in);
         Scanner leitorSenhaMaquina = new Scanner(System.in);
         Maquina maquinaAcessada = new Maquina();
@@ -21,6 +28,9 @@ public class App {
         Integer numeracaoMaquinaDigitado = leitorNumeracaoMaquina.nextInt();
 
         maquinaAcessada.setNumeracaoMaquina(numeracaoMaquinaDigitado);
+
+        String informacaoLog = String.format("Maquina %s logado com sucesso ", maquinaAcessada.getNumeracaoMaquina())
+                + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)) + "\n=================================================================================================\n";
 
         while (maquinaAcessada.validarNumeracao(numeracaoMaquinaDigitado) == false) {
             System.out.println("Númeração da máquina está inválida. Dígite "
@@ -49,7 +59,8 @@ public class App {
             System.out.println(String.format("Máquina %s está logado.",
                     maquinaAcessada.getNumeracaoMaquina()));
             ColetarDados(numeracaoMaquinaDigitado);
-        }else {
+            GravacaoLogs.teste(informacaoLog);
+        } else {
             System.out.println("Computador não está cadastrado!!!");
             Logar();
         }

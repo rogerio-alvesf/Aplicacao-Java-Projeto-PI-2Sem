@@ -1,6 +1,11 @@
 package br.com.sptech.project.sprint.java;
 
 import com.github.britooo.looca.api.core.Looca;
+import infrastructure.GravacaoLogs;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import modelsAzure.ProcessadorModel;
 
 public class Processador {
@@ -10,12 +15,16 @@ public class Processador {
     private Long frequencia;
 
     Looca maquina = new Looca();
+    GravacaoLogs logs = new GravacaoLogs();
 
     public Processador(String nome, Double uso, Long frequencia) {
         this.nome = nome;
         this.uso = uso;
         this.frequencia = frequencia;
     }
+
+    String informacoesLogs = String.format("frequencia do processador: %s, em uso: %.2f ", maquina.getProcessador().getFrequencia(), maquina.getProcessador().getUso())
+    + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)) + "\n=============================================================================================================\n";
 
     public String getNome() {
         return nome;
@@ -51,10 +60,11 @@ public class Processador {
         System.out.println("Processador já está cadastrado.");
     }
 
-    public void armazenarStatusCpu(Integer idMaquina) {
+    public void armazenarStatusCpu(Integer idMaquina) throws IOException {
         frequencia = maquina.getProcessador().getFrequencia();
         uso = maquina.getProcessador().getUso();
         ProcessadorModel.armazenarStatus(idMaquina, frequencia, uso);
+        GravacaoLogs.teste(informacoesLogs);
     }
 
     public String exibirInformacoesCpu() {

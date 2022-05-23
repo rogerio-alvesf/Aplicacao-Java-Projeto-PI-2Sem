@@ -103,6 +103,7 @@ public class MemoriaDisco {
             valorLeituras = Discos.get(i).getLeituras();
             valorTempoDeTransferencia = Discos.get(i).getTempoDeTransferencia();
             modelo = Discos.get(i).getModelo();
+                        //logs
 
             MemoriaDiscoModel.armazenarStatus(idMaquina, valorLeituras, valorEscrita, valorTempoDeTransferencia, espacoLivre, modelo);
         }

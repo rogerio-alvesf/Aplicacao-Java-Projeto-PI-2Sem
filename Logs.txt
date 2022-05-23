@@ -1,0 +1,85 @@
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Maquina 0 logado com sucesso,
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Maquina 1 logado com sucesso,
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Conexão feita na azure:  + LocalDateTime.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
+Maquina 1 logado com sucesso,domingo, 22 de maio de 2022
+Maquina 1 logado com sucesso,22 de mai de 2022 23:09:00
+Maquina 1domingo, 22 de maio de 2022
+=============================== logado com sucesso,
+Maquina 1 logado com sucesso,domingo, 22 de maio de 2022
+ =================================== 
+
+Maquina 1 logado com sucesso domingo, 22 de maio de 2022
+ =================================== 
+
+Maquina 1 logado com sucesso domingo, 22 de maio de 2022
+=================================================================================================
+
+Maquina 1 logado com sucesso domingo, 22 de maio de 2022
+=================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+=============================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+=============================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:50:55
+=============================================================================================================
+
+Maquina 1 logado com sucesso domingo, 22 de maio de 2022
+=================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
+=============================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
+=============================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
+=============================================================================================================
+
+frequencia do processador: null, em uso: nu22 de mai de 2022 23:53:56
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+frequencia do processador: 1997000000, em uso: 36,4323 de mai de 2022 00:00:21
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 36,4323 de mai de 2022 00:00:21
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+frequencia do processador: 1997000000, em uso: 28,25 23 de mai de 2022 00:03:55
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 28,25 23 de mai de 2022 00:03:55
+=============================================================================================================
+
+Maquina 1 logado com sucesso segunda-feira, 23 de maio de 2022
+=================================================================================================
+
+frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+=============================================================================================================
+
+frequencia do processador: 1997000000, em uso: 31,76 23 de mai de 2022 00:11:53
+=============================================================================================================
+

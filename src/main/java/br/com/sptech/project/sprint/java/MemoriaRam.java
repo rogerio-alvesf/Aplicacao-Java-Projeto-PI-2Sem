@@ -53,6 +53,7 @@ public class MemoriaRam {
     public void armazenarStatusMemoriaRam(Integer idMaquina) {
         uso = maquina.getMemoria().getEmUso();
         disponivel = maquina.getMemoria().getDisponivel();
+        //logs
         MemoriaRamModel.armazenarStatus(idMaquina, uso, disponivel);
     }
 
